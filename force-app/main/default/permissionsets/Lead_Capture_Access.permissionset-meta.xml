@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Lead_Capture_Access</fullName>
-    <label>Lead Capture Access</label>
+    <classAccesses>
+        <apexClass>LeadCaptureController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <description>Grants the minimum permissions required to submit and view Lead Capture Form data</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Capture_Notes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Source_Account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
+    <label>Lead Capture Access</label>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
@@ -13,14 +26,4 @@
         <object>Lead</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.Source_Account__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.Capture_Notes__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
 </PermissionSet>

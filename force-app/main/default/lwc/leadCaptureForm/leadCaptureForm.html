@@ -1,0 +1,79 @@
+<template>
+    <lightning-card title="Lead Capture">
+        <div class="form-container">
+            <template lwc:if={errorMessage}>
+                <div class="slds-notify slds-notify_alert slds-alert_error slds-m-bottom_small" role="alert">
+                    <span>{errorMessage}</span>
+                </div>
+            </template>
+
+            <lightning-input
+                label="First Name"
+                value={firstName}
+                onchange={handleFieldChange}
+                data-field="firstName">
+            </lightning-input>
+
+            <lightning-input
+                label="Last Name"
+                value={lastName}
+                required
+                onchange={handleFieldChange}
+                data-field="lastName">
+            </lightning-input>
+
+            <lightning-input
+                label="Company"
+                value={company}
+                required
+                readonly={hasRecordId}
+                onchange={handleFieldChange}
+                data-field="company">
+            </lightning-input>
+
+            <lightning-input
+                label="Email"
+                type="email"
+                value={email}
+                required
+                onchange={handleFieldChange}
+                data-field="email">
+            </lightning-input>
+
+            <lightning-input
+                label="Phone"
+                type="tel"
+                value={phone}
+                onchange={handleFieldChange}
+                data-field="phone">
+            </lightning-input>
+
+            <lightning-combobox
+                label="Lead Source"
+                value={leadSource}
+                options={leadSourceOptions}
+                onchange={handleFieldChange}
+                data-field="leadSource">
+            </lightning-combobox>
+
+            <lightning-textarea
+                label="Notes"
+                value={notes}
+                onchange={handleFieldChange}
+                data-field="notes">
+            </lightning-textarea>
+
+            <div class="slds-m-top_medium">
+                <lightning-button
+                    label="Submit"
+                    variant="brand"
+                    disabled={isLoading}
+                    onclick={handleSubmit}>
+                </lightning-button>
+                <template lwc:if={isLoading}>
+                    <lightning-spinner alternative-text="Submitting..." size="small"></lightning-spinner>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>
