@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description
+  >Account Record Page with the Lead Capture Form component embedded in the right sidebar. Allows sales reps to submit inbound leads directly from an Account context, with the Account name pre-populated and locked.</description>
+    <masterLabel>Account Record Page with Lead Capture</masterLabel>
+    <sobjectType>Account</sobjectType>
+    <type>RecordPage</type>
+    <template>
+        <name>force_recordLayout:recordLayout</name>
+    </template>
+
+    <!-- ═══ HEADER region — highlights panel ═══ -->
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>flexipage:recordHeader</componentName>
+            </componentInstance>
+        </itemInstances>
+        <mode>append</mode>
+        <name>header</name>
+        <type>Region</type>
+    </flexiPageRegions>
+
+    <!-- ═══ MAIN region (left 2/3) — detail panel + related lists ═══ -->
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>force_detailPanel:detailPanel</componentName>
+                <componentInstanceProperties>
+                    <name>headless</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName
+        >force_relatedListContainer:relatedListContainer</componentName>
+                <componentInstanceProperties>
+                    <name>relatedLists</name>
+                    <value>[]</value>
+                </componentInstanceProperties>
+            </componentInstance>
+        </itemInstances>
+        <mode>append</mode>
+        <name>main</name>
+        <type>Region</type>
+    </flexiPageRegions>
+
+    <!-- ═══ SIDEBAR region (right 1/3) — Lead Capture Form ═══ -->
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>c:leadCaptureForm</componentName>
+            </componentInstance>
+        </itemInstances>
+        <mode>append</mode>
+        <name>sidebar</name>
+        <type>Region</type>
+    </flexiPageRegions>
+</FlexiPage>
