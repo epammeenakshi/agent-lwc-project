@@ -1,0 +1,128 @@
+[
+  [
+    {
+      "apexClassOrTriggerName": "LeadCaptureController",
+      "apexClassOrTriggerId": "01pg50000090lRZAAY",
+      "apexTestClassId": "01pg50000090lRaAAI",
+      "apexTestMethodName": "testSubmitLead_invalidAccountId",
+      "numLinesCovered": 12,
+      "numLinesUncovered": 21,
+      "percentage": "36%",
+      "coverage": {
+        "coveredLines": [15, 16, 29, 30, 33, 36, 37, 40, 41, 42, 44, 45],
+        "uncoveredLines": [
+          18, 20, 21, 22, 23, 26, 31, 34, 38, 50, 51, 52, 53, 54, 55, 56, 57,
+          58, 60, 61, 63
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "apexClassOrTriggerName": "LeadCaptureController",
+      "apexClassOrTriggerId": "01pg50000090lRZAAY",
+      "apexTestClassId": "01pg50000090lRaAAI",
+      "apexTestMethodName": "testSubmitLead_invalidEmail",
+      "numLinesCovered": 8,
+      "numLinesUncovered": 25,
+      "percentage": "24%",
+      "coverage": {
+        "coveredLines": [15, 16, 29, 30, 33, 36, 37, 38],
+        "uncoveredLines": [
+          18, 20, 21, 22, 23, 26, 31, 34, 40, 41, 42, 44, 45, 50, 51, 52, 53,
+          54, 55, 56, 57, 58, 60, 61, 63
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "apexClassOrTriggerName": "LeadCaptureController",
+      "apexClassOrTriggerId": "01pg50000090lRZAAY",
+      "apexTestClassId": "01pg50000090lRaAAI",
+      "apexTestMethodName": "testSubmitLead_missingCompany",
+      "numLinesCovered": 6,
+      "numLinesUncovered": 27,
+      "percentage": "18%",
+      "coverage": {
+        "coveredLines": [15, 16, 29, 30, 33, 34],
+        "uncoveredLines": [
+          18, 20, 21, 22, 23, 26, 31, 36, 37, 38, 40, 41, 42, 44, 45, 50, 51,
+          52, 53, 54, 55, 56, 57, 58, 60, 61, 63
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "apexClassOrTriggerName": "LeadCaptureController",
+      "apexClassOrTriggerId": "01pg50000090lRZAAY",
+      "apexTestClassId": "01pg50000090lRaAAI",
+      "apexTestMethodName": "testSubmitLead_missingEmail",
+      "numLinesCovered": 7,
+      "numLinesUncovered": 26,
+      "percentage": "21%",
+      "coverage": {
+        "coveredLines": [15, 16, 29, 30, 33, 36, 38],
+        "uncoveredLines": [
+          18, 20, 21, 22, 23, 26, 31, 34, 37, 40, 41, 42, 44, 45, 50, 51, 52,
+          53, 54, 55, 56, 57, 58, 60, 61, 63
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "apexClassOrTriggerName": "LeadCaptureController",
+      "apexClassOrTriggerId": "01pg50000090lRZAAY",
+      "apexTestClassId": "01pg50000090lRaAAI",
+      "apexTestMethodName": "testSubmitLead_missingLastName",
+      "numLinesCovered": 5,
+      "numLinesUncovered": 28,
+      "percentage": "15%",
+      "coverage": {
+        "coveredLines": [15, 16, 29, 30, 31],
+        "uncoveredLines": [
+          18, 20, 21, 22, 23, 26, 33, 34, 36, 37, 38, 40, 41, 42, 44, 45, 50,
+          51, 52, 53, 54, 55, 56, 57, 58, 60, 61, 63
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "apexClassOrTriggerName": "LeadCaptureController",
+      "apexClassOrTriggerId": "01pg50000090lRZAAY",
+      "apexTestClassId": "01pg50000090lRaAAI",
+      "apexTestMethodName": "testSubmitLead_success",
+      "numLinesCovered": 23,
+      "numLinesUncovered": 10,
+      "percentage": "70%",
+      "coverage": {
+        "coveredLines": [
+          15, 16, 18, 20, 21, 26, 29, 30, 33, 36, 37, 40, 50, 51, 52, 53, 54,
+          55, 56, 57, 58, 60, 63
+        ],
+        "uncoveredLines": [22, 23, 31, 34, 38, 41, 42, 44, 45, 61]
+      }
+    }
+  ],
+  [
+    {
+      "apexClassOrTriggerName": "LeadCaptureController",
+      "apexClassOrTriggerId": "01pg50000090lRZAAY",
+      "apexTestClassId": "01pg50000090lRaAAI",
+      "apexTestMethodName": "testSubmitLead_withAccount",
+      "numLinesCovered": 27,
+      "numLinesUncovered": 6,
+      "percentage": "82%",
+      "coverage": {
+        "coveredLines": [
+          15, 16, 18, 20, 21, 26, 29, 30, 33, 36, 37, 40, 41, 42, 44, 50, 51,
+          52, 53, 54, 55, 56, 57, 58, 60, 61, 63
+        ],
+        "uncoveredLines": [22, 23, 31, 34, 38, 45]
+      }
+    }
+  ]
+]
