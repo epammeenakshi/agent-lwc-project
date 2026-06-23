@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source_Account__c</fullName>
+    <label>Source Account</label>
+    <type>Lookup</type>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Leads from Account</relationshipLabel>
+    <relationshipName>Source_Account</relationshipName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <required>false</required>
+    <description>Links an inbound lead to an existing Account for attribution tracking</description>
+</CustomField>

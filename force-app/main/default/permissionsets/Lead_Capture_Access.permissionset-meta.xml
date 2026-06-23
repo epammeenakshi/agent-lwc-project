@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Capture_Access</fullName>
+    <label>Lead Capture Access</label>
+    <description>Grants the minimum permissions required to submit and view Lead Capture Form data</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Lead</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Source_Account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Capture_Notes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+</PermissionSet>
